@@ -9,5 +9,4 @@ I know, Whatever.
 
 For more Info do please check the website mentioned in bio.
 
-(dir -include *.cs, *.xaml -recurse | select-string "^(\s*)//" -notMatch |
->>  select-string "^(\s*)$" -notMatch).Count
+(dir -include *.cpp, *.h -recurse | select-string "^(\s*)//" -notMatch | select-string "^(\s*)$" -notMatch).Count
